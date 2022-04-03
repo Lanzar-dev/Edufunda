@@ -1,0 +1,381 @@
+.signup {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.signup-left,
+.signup-right {
+  flex: 1;
+}
+
+.signup-left {
+  background-color: var(--color-light-pink);
+  /* position: relative; */
+}
+
+.signup-left-container {
+  padding: 15px 20px;
+  /* position: absolute; */
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+}
+
+.logo h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo,
+form button {
+  cursor: pointer;
+}
+
+.signup-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 50px 20px; */
+}
+
+.signup-left-content img {
+  width: 90%;
+  height: 70%;
+  margin-bottom: 20px;
+}
+
+.signup-left-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.signup-left-content p {
+  text-align: center;
+  font-size: 18px;
+  max-width: 60%;
+  line-height: 1.6rem;
+}
+
+/* .circle-small {
+  font-size: 40em;
+  display: inline-block;
+  width: 0.4em;
+  box-sizing: content-box;
+  height: 0.4em;
+  border: 0.1em solid #faebee;
+  position: relative;
+  border-radius: 0.35em;
+  position: absolute;
+  top: -220px;
+  right: -150px;
+} */
+
+/* .circle-big{
+font-size: 120em;
+display: inline-block;
+width: 0.4em;
+box-sizing: content-box;
+height: 0.4em;
+border: 0.1em solid #fbedf1;
+position: relative;
+border-radius: 0.35em;
+position: absolute;
+bottom: -700px;
+left: -600px;
+} */
+
+.signup-right {
+  /* z-index: 100; */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 20px;
+}
+
+.form-container h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-container p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  width: 80%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--color-grey);
+  border: none;
+  outline: none;
+}
+
+form input {
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+form input::placeholder,
+form select {
+  font-size: 18px;
+}
+
+form input::placeholder {
+  padding-left: 15px;
+}
+
+.names,
+.country-phone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input-field {
+  position: relative;
+}
+
+.person-icon {
+  position: absolute;
+  top: 10px;
+  opacity: 0.5;
+}
+
+.eye {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.first-name,
+.last-name,
+.country,
+.phone {
+  flex: 1;
+}
+
+form button {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-size: 18px;
+  border: none;
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+form button:hover {
+  opacity: 0.8;
+  transition: ease-in-out 0.3s;
+}
+
+.form-container p:last-child {
+  text-align: center;
+}
+
+.form-container p:last-child > a {
+  margin-left: 10px;
+}
+
+.form-container p:last-child > a:hover {
+  color: var(--color-pink);
+}
+
+@media only screen and (max-width: 1200px) {
+  .signup-left-container {
+    padding: 15px;
+  }
+
+  .signup-left-content {
+    margin: 50px 15px;
+  }
+
+  .signup-left-content img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .signup-left-content p {
+    max-width: 80%;
+    line-height: 1.8rem;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .signup-left-content h2 {
+    font-size: 26px;
+  }
+
+  .signup-left-content p {
+    max-width: 90%;
+  }
+
+  .signup-right {
+    height: 100vh;
+  }
+
+  .form-container {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .form-container h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .form-container p {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  form div {
+    margin-bottom: 5px;
+  }
+
+  .names,
+  .country-phone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form input {
+    padding: 10px;
+  }
+
+  form button {
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .form-container p:last-child {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .signup {
+    display: flex;
+    flex-direction: column;
+    height: 1800px;
+  }
+
+  .signup-left,
+  .signup-right {
+    width: 100%;
+    height: max-content;
+  }
+
+  .signup-left-container {
+    padding: 10px;
+  }
+
+  .signup-left-content {
+    margin: 20px;
+  }
+
+  .signup-left-content img {
+    margin-bottom: 15px;
+  }
+
+  .signup-left-content h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .signup-right {
+    padding: 10px;
+  }
+
+  .form-container {
+    align-items: center;
+    padding: 10px;
+  }
+
+  .form-container h2 {
+    font-size: 24px;
+  }
+
+  .form-container p {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 90%;
+    text-align: center;
+  }
+
+  form label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .form-container h2 {
+    font-size: 20px;
+  }
+
+  .form-container p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .signup-left-content h2,
+  .form-container h2 {
+    font-size: 18px;
+  }
+}
