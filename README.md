@@ -15,6 +15,6 @@ To install all the project dependencies from the package.json
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Deployment
+### Hosted link
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<a href="https://edufunda.netlify.app/">Edufunda</a>
